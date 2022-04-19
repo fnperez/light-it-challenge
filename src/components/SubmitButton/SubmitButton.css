@@ -1,0 +1,33 @@
+.button {
+    width: 200px;
+    margin-left: auto;
+    background-color: #0DADB9;
+    color: #FFF;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+.button.button--sending {
+    background-color: #0dadb988;
+    cursor: progress;
+}
+
+.button.button--sending:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+.button.button--primary:hover {
+    background-color: #066066;
+    cursor: pointer;
+}
+
+.button.button--primary:active {
+    background-color: #0dadb9bd;
+}

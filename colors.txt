@@ -1,0 +1,2 @@
+teal: #0DADB9
+gray: #9CA3AF
